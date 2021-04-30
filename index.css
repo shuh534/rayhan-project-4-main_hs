@@ -1,0 +1,94 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #DCECEE;
+    margin:0px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 4vw;
+    background-color: #017880;
+    width: 80vw;
+    height:100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    color: #F5F5F5;
+    border: 5px dashed black;
+}
+
+.container {
+    font-style: Bold 700;
+    width: 80vw;
+    color: #FF5A5F; 
+    font-size: 7vw;
+    margin: 0;
+    margin-top: 25vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(-5px 5px 0px #017880);
+}
+
+#canvas {
+    width: 500px;
+    height: 500px;
+    /* background-color: #017880; */
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: ease all .5s;
+    /* background: url(https://res.cloudinary.com/dx5fumr16/image/upload/v1619751223/test_awxrr6.svg) no-repeat top center; */
+    background-size:cover;
+}
+
+.sound-on {
+    position: fixed;
+    filter: invert(29%) sepia(51%) saturate(2732%) hue-rotate(160deg) brightness(89%) contrast(103%);
+    width: 50px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.directions {
+    margin-left: 5vw;
+    margin-top: 30px;
+    color: #017880;
+}
+
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: 8vw;
+    margin-top: 50px;
+    
+}
+
+.trace-letter {
+    font-size: 350px;
+    position:absolute;
+    top: 0;
+/*     left: 120px; */
+    color: #F5F5F5;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-dasharray: 5;
+    width: 500px;
+    height: 500px;
+    z-index: -9999;
+    text-align: center;
+    background-color: #017880;
+}
+
+@media only screen and (max-width: 600px) {
+    .canvas {
+        margin: auto;
+        width: 400px;
+        height: 400px;
+    }
+}
